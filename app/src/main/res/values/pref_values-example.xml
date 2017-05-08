@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="TypographyDashes">
+<!--     <string name="pref_unicastHostDefault">deusanyjunior.dj</string> -->
+<!--     <string name="pref_unicastPortDefault">65456</string> -->
+<!--     <string name="pref_unicastUDPHostDefault">10.10.10.10</string> -->
+<!--     <string name="pref_unicastUDPPortDefault">65535</string> -->
+<!--     <string name="pref_multicastHostDefault">224.2.2.4</string> -->
+<!--     <string name="pref_multicastPortDefault">56789</string> -->
+<!--     <string name="pref_multicastTTLDefault">100</string> -->
+<!--     <string name="pref_multicastInterfaceDefault">0</string> -->
+<!--     <string name="pref_pusherKeyDefault">example</string> -->
+<!--     <string name="pref_pusherPaidKeyDefault">example</string> -->
+<!--     <string name="pref_pubnubPublishKeyDefault">example</string> -->
+<!--     <string name="pref_pubnubSubscribeKeyDefault">example</string> -->
+<!--     <string name="pref_pubnubPaidPublishKeyDefault">example</string> -->
+<!--     <string name="pref_pubnubPaidSubscribeKeyDefault">example</string> -->
+<!-- 	<string name="pref_initialPacketsDefault">1000</string> -->
+<!--     <string name="pref_finalPacketsDefault">1001</string> -->
+<!--     <bool name="pref_geometricProgressionPacketsDefault">false</bool> -->
+<!--     <string name="pref_progressionValuePacketsDefault">2</string> -->
+<!-- 	<string name="pref_initialDelayDefault">1</string> -->
+<!--     <string name="pref_finalDelayDefault">256</string> -->
+<!--     <bool name="pref_geometricProgressionDelayDefault">true</bool> -->
+<!--     <string name="pref_progressionValueDelayDefault">2</string> -->
+<!--     <string name="pref_initialExtraFloatsDefault">0</string> -->
+<!--     <string name="pref_finalExtraFloatsDefault">250</string> -->
+<!--     <bool name="pref_geometricProgressionExtraFloatsDefault">false</bool> -->
+<!--     <string name="pref_progressionValueExtraFloatsDefault">50</string> -->
+<!--     <string name="pref_repeatitionsDefault">10</string> -->
+<!--     <string name="pref_standByTimeDefault">1000</string> -->
+</resources>

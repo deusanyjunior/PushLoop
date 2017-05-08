@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="TypographyDashes">
+
+    <string name="pref_unicastIPv4HostDefault">141.212.110.223</string>
+    <string name="pref_unicastIPv4PortDefault">65535</string>
+
+    <string name="pref_unicastIPv6HostDefault">2001:12f0:500:ff44:4674:6cff:fef1:5fdd</string>
+    <string name="pref_unicastIPv6PortDefault">65432</string>
+
+    <string name="pref_multicastHostDefault">233.142.23.2</string>
+    <string name="pref_multicastPortDefault">56789</string>
+    <string name="pref_multicastTTLDefault">100</string>
+    <string name="pref_multicastInterfaceDefault">0</string>
+    
+    <string name="pref_pusherKeyDefault">60fae669e3ebbce48776</string>
+
+    <string name="pref_pusherPaidKeyDefault">demo</string>
+    
+    <string name="pref_pubnubPublishKeyDefault">pub-c-73a4a871-8bf6-4ad1-80eb-d80225d0a063</string>
+    <string name="pref_pubnubSubscribeKeyDefault">sub-c-e7425952-e4a5-11e4-973d-02ee2ddab7fe</string>
+    
+    <string name="pref_pubnubPaidPublishKeyDefault">demo</string>
+    <string name="pref_pubnubPaidSubscribeKeyDefault">demo</string>
+	
+	<string name="pref_initialPacketsDefault">100</string>
+    <string name="pref_finalPacketsDefault">10000</string>
+    <bool name="pref_geometricProgressionPacketsDefault">true</bool>
+    <string name="pref_progressionValuePacketsDefault">10</string>
+	
+	<string name="pref_initialDelayDefault">150</string>
+    <string name="pref_finalDelayDefault">150</string>
+    <bool name="pref_geometricProgressionDelayDefault">true</bool>
+    <string name="pref_progressionValueDelayDefault">2</string>
+    
+    <string name="pref_initialExtraFloatsDefault">1</string>
+    <string name="pref_finalExtraFloatsDefault">1000</string>
+    <bool name="pref_geometricProgressionExtraFloatsDefault">true</bool>
+    <string name="pref_progressionValueExtraFloatsDefault">10</string>
+    
+    <string name="pref_repeatitionsDefault">10</string>
+    <string name="pref_standByTimeDefault">10000</string>
+    
+</resources>

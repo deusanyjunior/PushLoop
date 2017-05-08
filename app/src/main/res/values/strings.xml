@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PushLoop</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="button_push">PUSH</string>
+    <string name="button_loop">LOOP</string>
+    <string name="title_activity_push">Push</string>
+    <string name="title_activity_loop">Loop</string>
+    <string name="title_activity_settings">Settings</string>
+
+</resources>

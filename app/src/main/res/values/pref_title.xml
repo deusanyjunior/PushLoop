@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="TypographyDashes">
+    <string name="pref_titleSettings">Settings</string>
+    <string name="pref_titleConnections">Connections</string>
+    <string name="pref_summaryTitleConnections">Select the connection used during the tests.</string>
+
+    <string name="pref_connectionUnicastIPv4">Unicast IPv4</string>
+    <string name="pref_summaryConnectionUnicastIPv4">Define Host and Port for Unicast IPv4.</string>
+
+    <string name="pref_connectionUnicastIPv6">Unicast IPv6</string>
+    <string name="pref_summaryConnectionUnicastIPv6">Define Host and Port for Unicast IPv6.</string>
+
+    <string name="pref_connectionMulticast">Multicast</string>
+    <string name="pref_summaryConnectionMulticast">Define Multicast settings.</string>
+
+    <string name="pref_connectionPusher">Pusher</string>
+    <string name="pref_summaryConnectionPusher">Define the key for Pusher free accound.</string>
+
+    <string name="pref_connectionPusherPaid">Pusher (paid)</string>
+    <string name="pref_summaryConnectionPusherPaid">Define the key for Pusher paid account.</string>
+
+    <string name="pref_connectionPubNub">PubNub</string>
+    <string name="pref_summaryConnectionPubNub">Define keys.</string>
+
+    <string name="pref_connectionPubNubPaid">PubNub (paid)</string>
+    <string name="pref_summaryConnectionPubNubPaid">Define keys from paid account.</string>
+
+    <string name="pref_titleUnicastIPv4">Unicast IPv4</string>
+    <string name="pref_titleUnicastIPv4Host">Host</string>
+    <string name="pref_titleUnicastIPv4Port">Port</string>
+
+    <string name="pref_titleUnicastIPv6">Unicast IPv6</string>
+    <string name="pref_titleUnicastIPv6Host">Host</string>
+    <string name="pref_titleUnicastIPv6Port">Port</string>
+
+    <string name="pref_titleMulticast">Multicast</string>
+	<string name="pref_titleMulticastHost">Host</string>
+    <string name="pref_titleMulticastPort">Port</string>
+    <string name="pref_titleMulticastTTL">TTL</string>
+    <string name="pref_titleMulticastInterface">Interface</string>
+    <string name="pref_summaryTitleMulticastInterface">Select the network interface</string>
+
+    <string name="pref_titlePusher">Pusher Free Account</string>
+    <string name="pref_titlePusherKey">Key</string>
+    <string name="pref_titlePusherPaid">Pusher Paid Account</string>
+    <string name="pref_titlePusherPaidKey">Key</string>
+
+    <string name="pref_titlePubNub">PubNub Free Account</string>
+    <string name="pref_titlePubNubPublishKey">Publish key</string>
+    <string name="pref_titlePubNubSubscribeKey">Susbscribe key</string>
+
+    <string name="pref_titlePubNubPaid">PubNub Paid Account</string>
+    <string name="pref_titlePubNubPaidPublishKey">Publish key</string>
+    <string name="pref_titlePubNubPaidSubscribeKey">Susbscribe key</string>
+
+    <string name="pref_titleTests">Tests</string>
+    <string name="pref_summaryTests">Define settings used during the evaluations.</string>
+    <string name="pref_titlePackets">Packets</string>
+    <string name="pref_titleInitialPackets">Initial</string>
+	<string name="pref_titleFinalPackets">Final</string>
+    <string name="pref_titleGeometricProgressionPackets">Geometric progression</string>
+    <string name="pref_summaryGeometricProgressionPackets">Uses arithmetic progression when disabled.</string>
+    <string name="pref_titleProgressionValuePackets">Progression value</string>
+    <string name="pref_titleDelay">Delay (ms)</string>
+    <string name="pref_titleInitialDelay">Initial</string>
+	<string name="pref_titleFinalDelay">Final</string>
+    <string name="pref_titleGeometricProgressionDelay">Geometric progression</string>
+    <string name="pref_summaryGeometricProgressionDelay">Uses arithmetic progression when disabled.</string>
+    <string name="pref_titleProgressionValueDelay">Progression value</string>
+    <string name="pref_titleExtraFloats">Extra floats</string>
+    <string name="pref_titleInitialExtraFloats">Initial</string>
+    <string name="pref_titleFinalExtraFloats">Final</string>
+    <string name="pref_titleGeometricProgressionExtraFloats">Geometric progression</string>
+    <string name="pref_summaryGeometricProgressionExtraFloats">Uses arithmetic progression when disabled.</string>
+    <string name="pref_titleProgressionValueExtraFloats">Progression value</string>
+    <string name="pref_titleRepetitions">Repeat each test (n times)</string>
+    <string name="pref_titleStandByTime">Stand by after test (ms)</string>
+</resources>

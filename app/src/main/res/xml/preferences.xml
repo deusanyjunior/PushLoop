@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >  
+    <PreferenceScreen 
+        android:title="@string/pref_titleConnections"
+        android:summary="@string/pref_summaryTitleConnections">
+
+        <CheckBoxPreference 
+            android:key="pref_connectionUnicastIPv4"
+            android:title="@string/pref_connectionUnicastIPv4"
+            android:defaultValue="true"
+            />
+		<CheckBoxPreference
+			android:key="pref_connectionUnicastIPv6"
+			android:title="@string/pref_connectionUnicastIPv6"
+			android:defaultValue="false"
+			/>
+		<CheckBoxPreference
+            android:key="pref_connectionMulticast"
+            android:title="@string/pref_connectionMulticast"
+            android:defaultValue="true"
+            />
+        <CheckBoxPreference 
+            android:key="pref_connectionPusher"
+            android:title="@string/pref_connectionPusher"
+            android:defaultValue="false"
+            />
+        <!-- <CheckBoxPreference 
+            android:key="pref_connectionPusherPaid"
+            android:title="@string/pref_connectionPusherPaid"
+            android:defaultValue="false"
+            /> -->
+        <CheckBoxPreference 
+            android:key="pref_connectionPubNub"
+            android:title="@string/pref_connectionPubNub"
+            android:defaultValue="false"
+            />
+        <!-- <CheckBoxPreference 
+            android:key="pref_connectionPubNubPaid"
+            android:title="@string/pref_connectionPubNubPaid"
+            android:defaultValue="false" /> -->
+    </PreferenceScreen>
+
+    <PreferenceScreen 
+        android:title="@string/pref_titleUnicastIPv4"
+        android:summary="@string/pref_summaryConnectionUnicastIPv4"
+        android:dependency="pref_connectionUnicastIPv4">
+		    <EditTextPreference 
+		        android:key="pref_unicastIPv4Host"
+		        android:title="@string/pref_titleUnicastIPv4Host"
+		        android:defaultValue="@string/pref_unicastIPv4HostDefault"/>
+		    <EditTextPreference 
+		        android:key="pref_unicastIPv4Port"
+		        android:title="@string/pref_titleUnicastIPv4Port"
+		        android:inputType="number"
+		        android:defaultValue="@string/pref_unicastIPv4PortDefault"/>
+    </PreferenceScreen>
+
+	<PreferenceScreen
+		android:title="@string/pref_titleUnicastIPv6"
+		android:summary="@string/pref_summaryConnectionUnicastIPv6"
+		android:dependency="pref_connectionUnicastIPv6">
+		<EditTextPreference
+			android:key="pref_unicastIPv6Host"
+			android:title="@string/pref_titleUnicastIPv6Host"
+			android:defaultValue="@string/pref_unicastIPv6HostDefault"/>
+		<EditTextPreference
+			android:key="pref_unicastIPv6Port"
+			android:title="@string/pref_titleUnicastIPv6Port"
+			android:inputType="number"
+			android:defaultValue="@string/pref_unicastIPv6PortDefault"/>
+	</PreferenceScreen>
+
+	<PreferenceScreen
+        android:title="@string/pref_titleMulticast"
+        android:summary="@string/pref_summaryConnectionMulticast"
+        android:dependency="pref_connectionMulticast">
+		    <EditTextPreference 
+		        android:key="pref_multicastHost"
+		        android:title="@string/pref_titleMulticastHost"
+		        android:defaultValue="@string/pref_multicastHostDefault"/>
+		    <EditTextPreference 
+		        android:key="pref_multicastPort"
+		        android:title="@string/pref_titleMulticastPort"
+		        android:inputType="number"
+		        android:defaultValue="@string/pref_multicastPortDefault"/>
+		    <EditTextPreference 
+		        android:key="pref_multicastTTL"
+		        android:title="@string/pref_titleMulticastTTL"
+		        android:inputType="number"
+		        android:defaultValue="@string/pref_multicastTTLDefault"/>
+	        <ListPreference 
+		        android:key="pref_multicastInterface"
+		        android:title="@string/pref_titleMulticastInterface"
+		        android:summary="@string/pref_summaryTitleMulticastInterface"
+		        android:defaultValue="0"/>  
+    </PreferenceScreen>
+
+    <PreferenceScreen
+        android:title="@string/pref_titlePusher"
+        android:summary="@string/pref_summaryConnectionPusher"
+        android:dependency="pref_connectionPusher">
+        <EditTextPreference 
+            android:key="pref_pusherKey"
+            android:title="@string/pref_titlePusherKey"
+            android:defaultValue="@string/pref_pusherKeyDefault"/>
+    </PreferenceScreen>
+
+   <!--  <PreferenceScreen
+        android:title="@string/pref_titlePusherPaid"
+        android:summary="@string/pref_summaryConnectionPusherPaid"
+        android:dependency="pref_connectionPusherPaid">
+        <EditTextPreference 
+            android:key="pref_pusherPaidKey"
+            android:title="@string/pref_titlePusherPaidKey"
+            android:defaultValue="@string/pref_pusherPaidKeyDefault"/>
+    </PreferenceScreen> -->
+
+    <PreferenceScreen 
+        android:title="@string/pref_titlePubNub"
+        android:summary="@string/pref_summaryConnectionPubNub"
+        android:dependency="pref_connectionPubNub">
+        <EditTextPreference 
+            android:key="pref_pubnubPublishKey"
+            android:title="@string/pref_titlePubNubPublishKey"
+            android:defaultValue="@string/pref_pubnubPublishKeyDefault"/>
+        <EditTextPreference 
+            android:key="pref_pubnubSubscribeKey"
+            android:title="@string/pref_titlePubNubSubscribeKey"
+            android:defaultValue="@string/pref_pubnubSubscribeKeyDefault"/>
+    </PreferenceScreen>
+
+	<!-- <PreferenceScreen 
+	    android:title="@string/pref_titlePubNubPaid"
+	    android:summary="@string/pref_summaryConnectionPubNubPaid"
+	    android:dependency="pref_connectionPubNubPaid">
+	    <EditTextPreference 
+            android:key="pref_pubnubPaidPublishKey"
+            android:title="@string/pref_titlePubNubPaidPublishKey"
+            android:defaultValue="@string/pref_pubnubPaidPublishKeyDefault"/>
+        <EditTextPreference 
+            android:key="pref_pubnubPaidSubscribeKey"
+            android:title="@string/pref_titlePubNubPaidSubscribeKey"
+            android:defaultValue="@string/pref_pubnubPaidSubscribeKeyDefault"/>
+	</PreferenceScreen> -->
+
+	<PreferenceScreen 
+	    android:title="@string/pref_titleTests"
+	    android:summary="@string/pref_summaryTests">
+		    <PreferenceCategory android:title="@string/pref_titlePackets">
+		        <EditTextPreference
+			        android:key="pref_initialPackets"
+			        android:title="@string/pref_titleInitialPackets"
+			        android:inputType="number"
+			        android:defaultValue="@string/pref_initialPacketsDefault"/>
+		        <EditTextPreference 
+			        android:key="pref_finalPackets"
+			        android:title="@string/pref_titleFinalPackets"
+			        android:inputType="number"
+			        android:defaultValue="@string/pref_finalPacketsDefault"/>
+		    </PreferenceCategory>
+
+		    <CheckBoxPreference 
+		        android:key="pref_geometricProgressionPackets"
+		        android:title="@string/pref_titleGeometricProgressionPackets"
+		        android:summary="@string/pref_summaryGeometricProgressionPackets"
+		        android:defaultValue="@bool/pref_geometricProgressionPacketsDefault"/>
+		    <EditTextPreference 
+		        android:key="pref_progressionValuePackets"
+		        android:title="@string/pref_titleProgressionValuePackets"
+		        android:inputType="number"
+		        android:defaultValue="@string/pref_progressionValuePacketsDefault"/>
+
+		    <PreferenceCategory 
+		        android:title="@string/pref_titleDelay">
+			    <EditTextPreference 
+			        android:key="pref_initialDelay"
+			        android:title="@string/pref_titleInitialDelay"
+			        android:inputType="number"
+			        android:defaultValue="@string/pref_initialDelayDefault"/>
+			    <EditTextPreference 
+			        android:key="pref_finalDelay"
+			        android:title="@string/pref_titleFinalDelay"
+			        android:inputType="number"
+			        android:defaultValue="@string/pref_finalDelayDefault"/>
+		        <CheckBoxPreference 
+			        android:key="pref_geometricProgressionDelay"
+			        android:title="@string/pref_titleGeometricProgressionDelay"
+			        android:summary="@string/pref_summaryGeometricProgressionDelay"
+			        android:defaultValue="@bool/pref_geometricProgressionDelayDefault"/>
+			    <EditTextPreference 
+			        android:key="pref_progressionValueDelay"
+			        android:title="@string/pref_titleProgressionValueDelay"
+			        android:inputType="number"
+			        android:defaultValue="@string/pref_progressionValueDelayDefault"/>
+		    </PreferenceCategory>
+
+		    <PreferenceCategory 
+		        android:title="@string/pref_titleExtraFloats">
+		        <EditTextPreference 
+		            android:key="pref_initialExtraFloats"
+		            android:title="@string/pref_titleInitialExtraFloats"
+		            android:inputType="number"
+		            android:defaultValue="@string/pref_initialExtraFloatsDefault"/>
+		        <EditTextPreference 
+		            android:key="pref_finalExtraFloats"
+		            android:title="@string/pref_titleFinalExtraFloats"
+		            android:inputType="number"
+		            android:defaultValue="@string/pref_finalExtraFloatsDefault"/>
+			    <CheckBoxPreference 
+			        android:key="pref_geometricProgressionExtraFloats"
+			        android:title="@string/pref_titleGeometricProgressionExtraFloats"
+			        android:summary="@string/pref_summaryGeometricProgressionExtraFloats"
+			        android:defaultValue="@bool/pref_geometricProgressionExtraFloatsDefault"/>
+			    <EditTextPreference 
+			        android:key="pref_progressionValueExtraFloats"
+			        android:title="@string/pref_titleProgressionValueExtraFloats"
+			        android:inputType="number"
+			        android:defaultValue="@string/pref_progressionValueExtraFloatsDefault"/>
+		    </PreferenceCategory>
+
+		    <PreferenceCategory 
+		        android:title="@string/pref_titleRepetitions">
+			</PreferenceCategory>
+
+		    <EditTextPreference
+		        android:key="pref_repetitions"
+		        android:title="@string/pref_titleRepetitions"
+		        android:inputType="number"
+		        android:defaultValue="@string/pref_repeatitionsDefault"/>
+		    <EditTextPreference 
+		        android:key="pref_standByTime"
+		        android:title="@string/pref_titleStandByTime"
+		        android:inputType="number"
+		        android:defaultValue="@string/pref_standByTimeDefault"/>
+	</PreferenceScreen>
+</PreferenceScreen>
